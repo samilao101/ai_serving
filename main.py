@@ -28,6 +28,7 @@ response = client.chat.completions.create(
 message = response.choices[0].message.content
 
 print(message)
+#test
 
 response = client.chat.completions.create(
     model="gpt-4-vision-preview",
