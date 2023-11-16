@@ -23,6 +23,7 @@ response = client.chat.completions.create(
   ], 
   response_format = {"type": "json_object"}
 )
+print(response)
 
 
 message = response.choices[0].message.content
@@ -60,7 +61,7 @@ response = client.images.generate(
 )
 image_url = response.data[0].url
 print(image_url)
-
+#hello there
 
 speech_file_path = "speech.mp3"
 response = client.audio.speech.create(
